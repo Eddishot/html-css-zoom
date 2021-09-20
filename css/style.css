@@ -2,8 +2,156 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 
 body{
     background-color: black;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    position: relative;
+
 }
+
+.header-button{
+    text-align: right;
+    padding: 15px;
+}
+
+
+button{
+    background-color: #4b4c4f;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+.main-container{
+    display: flex;
+    height: calc(100vh - 52px - 59px);
+    overflow: hidden;
+    position: relative;
+    
+   
+
+}
+
+.main-container-screen{
+    width: calc(100vw - 150px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+    align-content: space-around;
+    
+    
+}
+
+.main-container-screen div{
+    width: calc(100% / 5);
+    /* height: calc(100% / 3); */
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 150px;
+    border: 1px solid transparent;
+    flex-shrink: 0;
+    padding: 3px;
+   
+
+}
+
+.main-container-screen > div:hover{
+    border: 3px solid red;
+} 
+
+
+.main-container-screen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.main-container-aside{
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    
+
+}
+.main-container-aside-2{
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:-30px;
+    
+}
+
+.fa-chevron-circle-right, .fa-chevron-circle-left{
+    font-size: 30px;
+}
+
+.main-container-aside > i:hover{
+    color:skyblue;
+}
+
+.main-container-aside-2 > i:hover{
+    color:skyblue;
+}
+
+
+
+
+
+
+.footer-container{
+    background-color: rgb(22, 21, 22);
+    
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+ */
+}
+
+
+.footer-container i{
+    font-size: 20px;
+    
+}
+
+footer div{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+.footer-right{
+    background-color: grey;
+    color: rgb(180, 26, 26);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    padding: 1px 5px;
+}
+
+
+
